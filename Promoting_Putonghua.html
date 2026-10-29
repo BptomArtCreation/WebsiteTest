@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Promoting 2 | Languages Discipline</title>
+<link href="styles.css" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<link id="siteStyles" rel="stylesheet" href="style.css?v=2">
+<script defer src="app.js?v=2"></script>
+</head>
+<body class="section-page" data-page="section-8">
+
+
+<!-- Header -->
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <!-- 外部 SVG 檔案 -->
+      <img src="Asset/VTC Logo svg.svg" alt="" class="logo-img" width= 70px>
+      <span class="logo-text">Languages Discipline</span>
+    </a>
+
+    <div class="header-quick" id="headerQuick">
+      <a href="Workplace_Communication_Skills.html"><span class="pq-full">Workplace communication</span><span class="pq-short">Workplace</span></a>
+      <a href="Learning_Experiences.html"><span class="pq-full">Learning experiences</span><span class="pq-short">Learning</span></a>
+      <a href="Nurturing_Emerging_Skills.html"><span class="pq-full">Emerging skills</span><span class="pq-short">Emerging</span></a>
+      <a href="Fostering_Cultural_Appreciation.html"><span class="pq-full">Cultural appreciation</span><span class="pq-short">Culture</span></a>
+      <a href="Student_Achievements.html"><span class="pq-full">Student achievements</span><span class="pq-short">Achievements</span></a>
+    </div>
+
+    <div class="header-actions">
+      <div class="lang-wrap">
+        <button class="icon-btn" id="langBtn" aria-label="Select language" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+            <circle cx="12" cy="12" r="9"/>
+            <path d="M3 12h18"/>
+            <ellipse cx="12" cy="12" rx="4" ry="9"/>
+          </svg>
+        </button>
+        <div class="lang-menu" id="langMenu" role="menu" aria-label="Language">
+          <button data-lang="en" data-label="English" class="active">English</button>
+          <button data-lang="zh-Hant" data-label="繁體中文">繁體中文</button>
+          <button data-lang="zh-Hans" data-label="简体中文">简体中文</button>
+          <span class="lang-indicator" id="langIndicator"></span>
+        </div>
+      </div>
+
+      <button class="icon-btn" id="searchBtn" aria-label="Search">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/>
+        </svg>
+      </button>
+
+      <button class="hamburger" id="hamburgerBtn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="drawer">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Search Overlay — FIX #2: Only search box, no pre-populated results -->
+<div class="search-overlay" id="searchOverlay">
+  <div class="search-panel">
+    <div class="search-input-row">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/>
+      </svg>
+      <input id="searchInput" type="text" placeholder="Search sections… 搜尋版塊…" autocomplete="off">
+      <button class="icon-btn" id="searchClose" aria-label="Close search">
+        <svg width="16" height="16" viewBox="0 0 18 18" fill="none">
+          <path d="M2 2 L16 16 M16 2 L2 16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+    </div>
+    <div class="search-results" id="searchResults"></div>
+  </div>
+</div>
+
+<!-- Drawer Overlay -->
+<div class="drawer-overlay" id="drawerOverlay"></div>
+
+<!-- Drawer Navigation -->
+<nav class="drawer" id="drawer" aria-label="Main navigation">
+  <button class="drawer-close" id="drawerClose" aria-label="Close navigation menu">
+    <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+      <path d="M2 2 L16 16 M16 2 L2 16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    </svg>
+  </button>
+  <h3>Navigation Menu</h3>
+  <a href="index.html">About us</a>
+  <a href="Workplace_Communication_Skills.html">Workplace communication skills</a>
+  <a href="Learning_Experiences.html">Learning experiences</a>
+  <a href="Nurturing_Emerging_Skills.html">Emerging skills</a>
+  <a href="Fostering_Cultural_Appreciation.html">Fostering cultural appreciation</a>
+  <a href="Student_Achievements.html">Student achievements</a>
+  <a href="Promoting_Putonghua.html">Promoting PTTC</a>
+  <a href="Promoting_VLPO.html">Promoting VLPO</a>
+  <a href="Privacy_Policy.html">Privacy policy</a>
+  <a href="Disclaimer.html">Disclaimer</a>
+  <a href="Accessibility.html">Accessibility</a>
+  <a href="Sitemap.html">Sitemap</a>
+</nav>
+
+
+
+<!-- Static image replaces only the homepage Hero on this dedicated page. -->
+<div class="static-hero">
+  <img class="static-hero__image" src="Asset/section-banner-placeholder.svg"
+       alt="Promoting 2 banner placeholder" width="1920" height="1080" fetchpriority="high">
+</div>
+
+<!-- Complete original Section; no content omitted. -->
+<section class="section" id="section-8">
+  <div class="promo-card reveal promo-card--deep">
+    <div>
+      <h3>PTTC Webpage</h3>
+       <p>Content</p>
+      <a href="#" class="btn btn--white">Learn More →</a>
+    </div>
+    <div class="promo-placeholder--subtle">Image Placeholder<br>(320 × 200)</div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-links">
+      <a href="section-9.html#section-9">Privacy Policy</a>
+      <a href="section-10.html#section-10">Disclaimer</a>
+      <a href="section-11.html#section-11">Accessibility</a>
+      <a href="section-12.html#section-12">Sitemap</a>
+      <a href="#">Contact Us</a>
+    </div>
+    <div class="footer-copy">© 2026 Vocational Training Council. All rights reserved.</div>
+  </div>
+</footer>
+
+<!-- Toast -->
+<div class="toast" id="toast"></div>
+
+
+</body>
+</html>
